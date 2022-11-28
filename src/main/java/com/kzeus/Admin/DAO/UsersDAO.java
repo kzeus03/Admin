@@ -1,0 +1,13 @@
+package com.kzeus.Admin.DAO;
+
+import java.util.List;
+
+import com.kzeus.Admin.entity.Users;
+
+public interface UsersDAO {
+	
+	public List<Users> findAll();
+	public Users findById(int userId);
+	public void save(Users theUsers);
+	public void deleteById(int theId);
+}
